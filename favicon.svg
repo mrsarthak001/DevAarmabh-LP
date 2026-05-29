@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>DevAarambh</title>
+  <rect width="64" height="64" rx="12" fill="#E8501E"/>
+  <path d="M16 18 L34 32 L16 46"
+        stroke="white"
+        stroke-width="6"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"/>
+  <circle cx="46" cy="20" r="5" fill="white" fill-opacity="0.85"/>
+</svg>

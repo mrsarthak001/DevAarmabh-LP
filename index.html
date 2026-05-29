@@ -1,14 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
+  <!-- ─── PRIMARY META ─── -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DevAarambh · Building India's Builder Ecosystem</title>
-  <meta name="description" content="Hackathons. AI initiatives. Developer communities. Built with people who ship." />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>DevAarambh · India's Developer Builder Ecosystem | Hackathons, AI & Community</title>
+  <meta name="description" content="DevAarambh is building India's next-generation developer ecosystem. Hackathons, AI workshops, and community programs across 11 cities — Delhi, Mumbai, Bengaluru, and more." />
+  <meta name="keywords" content="DevAarambh, India developer community, hackathons India, AI workshops India, GenAI bootcamp, build with AI, developer ecosystem, Nasiko buildathon, Localhost meetup, tech community India, builders India, developer relations India, campus hackathon, AI upskilling India, developer events India" />
+  <meta name="author" content="DevAarambh" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="rating" content="general" />
+  <meta name="distribution" content="global" />
+  <meta name="revisit-after" content="7 days" />
+  <meta name="theme-color" content="#E8501E" />
+  <meta name="msapplication-TileColor" content="#E8501E" />
+  <meta name="application-name" content="DevAarambh" />
+  <meta name="apple-mobile-web-app-title" content="DevAarambh" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="format-detection" content="telephone=yes" />
+  <meta name="geo.region" content="IN-UP" />
+  <meta name="geo.placename" content="Noida" />
+  <meta name="geo.position" content="28.5355;77.3910" />
+  <meta name="ICBM" content="28.5355, 77.3910" />
+
+  <!-- ─── CANONICAL ─── -->
+  <link rel="canonical" href="https://devaarambh.com/" />
+
+  <!-- ─── OPEN GRAPH (Facebook, LinkedIn, WhatsApp) ─── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DevAarambh" />
+  <meta property="og:title" content="DevAarambh · Building India's Developer Builder Ecosystem" />
+  <meta property="og:description" content="Hackathons. AI initiatives. Developer communities. Active across 11 cities in India and expanding. Built with people who ship." />
+  <meta property="og:url" content="https://devaarambh.com/" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:image" content="https://devaarambh.com/og-image.png" />
+  <meta property="og:image:secure_url" content="https://devaarambh.com/og-image.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="DevAarambh — India's developer builder ecosystem" />
+
+  <!-- ─── TWITTER CARD ─── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@devaarambh" />
+  <meta name="twitter:creator" content="@devaarambh" />
+  <meta name="twitter:title" content="DevAarambh · India's Developer Builder Ecosystem" />
+  <meta name="twitter:description" content="Hackathons. AI initiatives. Developer communities. Active across 11 cities in India." />
+  <meta name="twitter:image" content="https://devaarambh.com/og-image.png" />
+  <meta name="twitter:image:alt" content="DevAarambh — India's developer builder ecosystem" />
+
+  <!-- ─── FAVICONS & PWA ─── -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="mask-icon" href="/favicon.svg" color="#E8501E" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- ─── PERFORMANCE: PRECONNECT & DNS-PREFETCH ─── -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+  <link rel="preconnect" href="https://api.web3forms.com" />
+  <link rel="dns-prefetch" href="https://basemaps.cartocdn.com" />
+  <link rel="dns-prefetch" href="https://raw.githubusercontent.com" />
+
+  <!-- ─── FONTS & LIBRARIES ─── -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+
+  <!-- ─── STRUCTURED DATA: ORGANIZATION ─── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://devaarambh.com/#organization",
+    "name": "DevAarambh",
+    "alternateName": "Dev Aarambh",
+    "url": "https://devaarambh.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://devaarambh.com/logo.png",
+      "width": 512,
+      "height": 512
+    },
+    "image": "https://devaarambh.com/og-image.png",
+    "description": "DevAarambh is building India's next-generation developer ecosystem through hackathons, AI workshops, and community programs.",
+    "foundingDate": "2025",
+    "foundingLocation": "Noida, India",
+    "email": "sarthak@devaarambh.com",
+    "telephone": "+91-96750-70702",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "WeWork Berger Delhi One, Floor 19, C-001/A2, Sector 16B",
+      "addressLocality": "Noida",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "201301",
+      "addressCountry": "IN"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Delhi" },
+      { "@type": "City", "name": "Mumbai" },
+      { "@type": "City", "name": "Bengaluru" },
+      { "@type": "City", "name": "Chennai" },
+      { "@type": "City", "name": "Kolkata" },
+      { "@type": "City", "name": "Hyderabad" },
+      { "@type": "City", "name": "Ahmedabad" },
+      { "@type": "City", "name": "Pune" },
+      { "@type": "City", "name": "Bhopal" },
+      { "@type": "City", "name": "Indore" },
+      { "@type": "City", "name": "Jaipur" }
+    ],
+    "sameAs": [
+      "https://localhost.devaarambh.com/",
+      "https://nasiko.devaarambh.com/",
+      "https://buildwithai.devaarambh.com/"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-96750-70702",
+      "email": "sarthak@devaarambh.com",
+      "contactType": "customer support",
+      "areaServed": "IN",
+      "availableLanguage": ["English", "Hindi"]
+    },
+    "knowsAbout": [
+      "Developer Community",
+      "Hackathons",
+      "Artificial Intelligence",
+      "Generative AI",
+      "Developer Relations",
+      "Tech Education",
+      "Builder Programs"
+    ]
+  }
+  </script>
+
+  <!-- ─── STRUCTURED DATA: WEBSITE + SEARCH ─── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://devaarambh.com/#website",
+    "url": "https://devaarambh.com/",
+    "name": "DevAarambh",
+    "description": "India's developer builder ecosystem — hackathons, AI programs, and community.",
+    "publisher": { "@id": "https://devaarambh.com/#organization" },
+    "inLanguage": "en-IN"
+  }
+  </script>
+
+  <!-- ─── STRUCTURED DATA: LOCAL BUSINESS ─── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://devaarambh.com/#localbusiness",
+    "name": "DevAarambh",
+    "image": "https://devaarambh.com/og-image.png",
+    "url": "https://devaarambh.com/",
+    "telephone": "+91-96750-70702",
+    "email": "sarthak@devaarambh.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "WeWork Berger Delhi One, Floor 19, C-001/A2, Sector 16B",
+      "addressLocality": "Noida",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "201301",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 28.5355,
+      "longitude": 77.3910
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "10:00",
+      "closes": "19:00"
+    }
+  }
+  </script>
+
+  <!-- ─── STRUCTURED DATA: INITIATIVES (Events / Programs) ─── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "@id": "https://localhost.devaarambh.com/#localhost",
+        "name": "Localhost by DevAarambh",
+        "url": "https://localhost.devaarambh.com/",
+        "description": "Developer community meetups across India — upskilling builders through IRL gatherings and hands-on sessions.",
+        "parentOrganization": { "@id": "https://devaarambh.com/#organization" }
+      },
+      {
+        "@type": "Event",
+        "@id": "https://nasiko.devaarambh.com/#nasiko",
+        "name": "Nasiko Buildathon",
+        "url": "https://nasiko.devaarambh.com/",
+        "description": "AI buildathon where 200 developers shipped real-world solutions over a weekend.",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "organizer": { "@id": "https://devaarambh.com/#organization" },
+        "location": {
+          "@type": "Place",
+          "name": "India",
+          "address": { "@type": "PostalAddress", "addressCountry": "IN" }
+        }
+      },
+      {
+        "@type": "EducationalOccupationalProgram",
+        "@id": "https://buildwithai.devaarambh.com/#buildwithai",
+        "name": "Build With AI",
+        "url": "https://buildwithai.devaarambh.com/",
+        "description": "India's largest AI upskilling program — a 10-city tour bringing hands-on GenAI workshops to 20,000+ developers.",
+        "provider": { "@id": "https://devaarambh.com/#organization" },
+        "educationalProgramMode": "blended",
+        "occupationalCategory": "Software Developer"
+      }
+    ]
+  }
+  </script>
   <style>
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -40,6 +259,27 @@
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
       cursor: default;
+    }
+
+    /* ── ACCESSIBILITY: Skip link ── */
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 16px;
+      background: var(--accent);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      z-index: 10001;
+      transition: top 0.2s;
+    }
+    .skip-link:focus {
+      top: 60px;
+      outline: 2px solid white;
+      outline-offset: 2px;
     }
 
     /* ── NOISE OVERLAY ── */
@@ -2478,8 +2718,12 @@
   <a href="#" class="nav-cta open-impact-modal">Join the movement →</a>
 </header>
 
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<main id="main" role="main">
+
 <!-- HERO -->
-<section class="hero">
+<section class="hero" aria-labelledby="hero-heading">
   <div class="hero-grid"></div>
   <div class="hero-inner">
     <div class="hero-meta">
@@ -2487,7 +2731,7 @@
       <span class="hero-since">// est. 2025 · Quietly building</span>
     </div>
 
-    <h1>
+    <h1 id="hero-heading">
       Built for the<br />
       <span class="serif">next generation</span><br />
       of <span class="word-rotate" id="rotator">Builders.</span>
@@ -2845,8 +3089,10 @@
   </div>
 </div>
 
+</main>
+
 <!-- FOOTER -->
-<footer>
+<footer role="contentinfo">
   <div class="footer-inner">
 
     <!-- Newsletter -->

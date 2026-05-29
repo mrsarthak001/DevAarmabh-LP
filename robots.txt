@@ -1,0 +1,57 @@
+# DevAarambh — robots.txt
+# https://devaarambh.com/
+
+User-agent: *
+Allow: /
+Disallow: /lander
+
+# Block AI training crawlers (optional; comment out to allow)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+# Allow Google-Extended for Google AI products
+User-agent: Google-Extended
+Allow: /
+
+# Standard search engines — full crawl
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+# Sitemap
+Sitemap: https://devaarambh.com/sitemap.xml
+
+# Host preference
+Host: devaarambh.com
